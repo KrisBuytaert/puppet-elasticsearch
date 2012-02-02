@@ -16,7 +16,9 @@ class elasticsearch {
   # TODO Elastic search is not running  even with this in here.. 
   # Add hasssatus .. 
   service {"elasticsearch":
-    ensure => "running";
+    ensure    => "running",
+    hasstatus => 'true',
+    enable    => 'true';
 
 
 
