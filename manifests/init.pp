@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class elasticsearch {
+class elasticsearch ($version="0.17.6-1.el6"){
 
   # TODO Elastic search is not running  even with this in here.. 
   # Add hasssatus .. 
@@ -27,7 +27,7 @@ class elasticsearch {
 
   package {
     "elasticsearch":
-      ensure => "0.17.6-1.el6";
+      ensure => "$version";
     }
 
 
