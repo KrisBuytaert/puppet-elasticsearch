@@ -11,10 +11,11 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class elasticsearch ($version='0.17.6-1.el6',$es_clustername='elasticsearch'){
+class elasticsearch::service{
 
-
-  include elasticsearch::package
-  include elasticsearch::config
-  include elasticsearch::service
+  service {'elasticsearch':
+    ensure    => 'running',
+    hasstatus => 'true',
+    enable    => 'true';
+  }
 }
