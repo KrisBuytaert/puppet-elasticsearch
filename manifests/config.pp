@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class elasticsearch::config{
+class elasticsearch::config($es_clustername = $::elasticsearch::params::es_clustername){
 
   require elasticsearch::params
 
