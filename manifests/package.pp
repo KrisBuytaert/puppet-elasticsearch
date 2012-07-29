@@ -17,7 +17,7 @@ class elasticsearch::package($version =  $::elasticsearch::params::version){
 
   require elasticsearch::params
 
-  notify {"${version}": }
+  # notify {"${version}": }
 
   package {
     'elasticsearch':

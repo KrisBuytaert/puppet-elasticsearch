@@ -16,6 +16,7 @@ class elasticsearch::service{
   service {'elasticsearch':
     ensure    => 'running',
     hasstatus => 'true',
-    enable    => 'true';
+    enable    => 'true',
+    require   => File['/etc/elasticsearch/elasticsearch.yml'],
   }
 }
