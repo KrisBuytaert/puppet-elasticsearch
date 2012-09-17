@@ -15,5 +15,4 @@ class elasticsearch::params (
   $version        = '0.17.6-1.el6',
   $es_clustername = 'elasticsearch'
 ) {
-
 }
