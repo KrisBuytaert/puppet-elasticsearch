@@ -1,3 +1,9 @@
-elasticsearch
 
-This is the elasticsearch module.
+
+This module predates 
+
+https://github.com/elasticsearch/puppet-elasticsearch
+
+Which is what we use these days..   
+
+This one stays around for historical reasons and people still having trees based on it with no local mirrors ;)
